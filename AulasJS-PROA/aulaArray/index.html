@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+
+    <script>
+
+        //ARRAY VAZIO: podemos criar um array vazio para inserir objetos posteriormente
+        /* var arrayVazio = []; */
+
+
+        //TIPOS DE OBJETOS:
+        /* var tipos = ["texto", 1, true, x]; */
+
+
+        //PEGANDO OBJETO PELA POSICAO, LEMBRE-SE QUE OS OBJETOS INICIAM COM 0 ;
+        //OBS: DEVERA EXIBIR "NOELIA"
+        var alunas = ["Camily", "Dani", "Noelia"];
+        console.log(alunas[2]);
+
+
+        //ALTERANDO O VALOR DE UM OBJETO
+        var alunos = ["Bryan", "Ryan Bryan", "Rian"];
+        alunos[2] = "Luiz";
+        console.log(alunos[2]);
+
+        
+        //JUNTANDO DOIS ARRAYS alunas e alunos EM UM OUTRO ARRAY proanos
+        var proanos = alunas.concat(alunos);
+        console.log(proanos);
+
+        
+        //RETIRANDO O ULTIMO OBJETO DO ARRAY COM "POP"
+        proanos.pop();    
+        console.log(proanos);
+
+        
+        //ADICIONANDO OBJETOS AO ARRAY
+        alunas.push('Marina');    
+        alunas.push('Vitória');    
+        alunas.push('Gabriele');    
+        alunas.push('Maria Eduarda');    
+        alunas.push('Sara');     
+        console.log(alunas);
+
+
+    </script>
+</body>
+</html>
