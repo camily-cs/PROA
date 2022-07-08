@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays e seus metodos fantasticos: Ex3</title>
+</head>
+<body>
+    <script>
+        //OK
+        /* 
+        Machado de Assis!
+        Foi um escritor brasileiro, considerado por muitos críticos, estudiosos, escritores e leitores o maior nome da literatura brasileira. 
+
+        A sua lista de obras: 
+
+        Romances
+        Memorial de Aires (1908)
+        Ressurreição (1872)
+        Casa Velha (1885)
+        Memórias Póstumas de Brás Cubas (1881)
+        Helena (1876)
+        Quincas Borba (1891)
+        Esaú e Jacó (1904)
+        A mão e a luva (1874)
+        Dom Casmurro (1899)
+        Iaiá Garcia (1878)
+
+        Coletânea de Poesias
+        Americanas (1875)
+        Ocidentais (1880)
+        Falenas (1870)
+        Crisálidas (1864)
+        Poesias Completas (1901)
+
+        Coletânea de contos
+        Várias Histórias (1896)
+        Histórias sem Data (1884)
+        Papéis Avulsos (1882)
+        Contos Fluminenses (1870)
+        Histórias da Meia-Noite (1873)
+        Relíquias de Casa Velha (1906)
+        Páginas Recolhidas (1899)
+
+        Para cada um dos grupos de obras acima, ordene e crie um array com as obras. 
+
+        Agora, ainda utilizando código, crie mais um array e insira os três primeiros livros de cada grupo de obras. 
+        */
+
+
+        var romances = [
+            "Memorial de Aires",
+            "Ressurreição",
+            "Casa Velha",
+            "Memórias Póstumas de Brás Cubas",
+            "Helena",
+            "Quincas Borba",
+            "Esaú e Jacó",
+            "A mão e a luva",
+            "Dom Casmurro",
+            "Iaiá Garcia"
+        ];
+
+        var coletaneaDePoesias = [
+            "Americanas",
+            "Ocidentais",
+            "Falenas",
+            "Crisálidas",
+            "Poesias Completas"
+        ];
+
+        var ColetaneaDeContos = [
+            "Várias Histórias",
+            "Histórias sem Data",
+            "Papéis Avulsos",
+            "Contos Fluminenses",
+            "Histórias da Meia-Noite",
+            "Relíquias de Casa Velha",
+            "Páginas Recolhidas"
+        ];
+
+
+
+        var array = [];
+        var contador = 0;
+        var contador1 = 0;
+        var contador2 = 0;
+
+        //pegando os 3 primeiros valores do array romance
+        while(contador < 3){
+            array.push(romances [contador])
+            contador++
+        }
+
+        //pegando os 3 primeiros valores do array coletaneaDePoesias
+        while(contador1 < 3){
+            array.push(coletaneaDePoesias [contador1])
+            contador1++
+        }
+
+        //pegando os 3 primeiros valores do array coletaneaDeContos
+        while(contador2 < 3){
+            array.push(ColetaneaDeContos [contador2])
+            contador2++
+        }
+
+        document.write("Romances: "+romances+"</br>");
+        document.write("Poesias: "+coletaneaDePoesias+"</br>");
+        document.write("Contos: "+ColetaneaDeContos+"</br>");
+        document.write("Array: "+array);
+
+    </script>
+</body>
+</html>

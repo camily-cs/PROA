@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2 - Ex16</title>
+</head>
+<body>
+    <script>
+        //OK
+        //16 - As maçãs custam R$ 0,30 cada se forem compradas menos do que uma dúzia, e R$ 0,25 se forem compradas pelo menos doze. Escreva um programa que leia o número de maçãs compradas (considere que o usuário informará a quantidade), e calcule e escreva o valor total da compra.
+
+
+        var qtdeMaca = parseInt(prompt("Informe a quantidade de maçãs"));
+        var unidadeNormal = 0.30;
+        var unidadeDuzia = 0.25;
+        var result = 0;
+
+        if(qtdeMaca < 12){
+            result = unidadeNormal * qtdeMaca;
+            document.write("O valor total é: "+result);
+        } else {
+            result = unidadeDuzia * qtdeMaca;
+            document.write("O valor total é: "+result);
+        }
+        
+
+    </script>
+</body>
+</html>

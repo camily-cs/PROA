@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2 - Ex14</title>
+</head>
+<body>
+    <script>
+        //OK
+        //14 - Acrescente ao exercício anterior a mensagem "Infelizmente, você foi reprovado!" caso a média calculada seja menor que 6.0.
+
+
+    var A1nota1  = parseInt(prompt("nota 1"));
+    var A1nota2  = parseInt(prompt("nota 2"));
+    var A1nota3  = parseInt(prompt("nota 3"));
+    var A1nota4  = parseInt(prompt("nota 4"));
+
+    var A2nota1  = parseInt(prompt("nota 1"));
+    var A2nota2  = parseInt(prompt("nota 2"));
+    var A2nota3  = parseInt(prompt("nota 3"));
+    var A2nota4  = parseInt(prompt("nota 4"));
+
+    var avaliacao1 = ((A1nota1+A1nota2+A1nota3+A1nota4)/4);
+    var avaliacao2 = ((A2nota1+A2nota2+A2nota3+A2nota4)/4);
+    
+    var mediaSemestral = ((avaliacao1 + avaliacao2) / 2);
+
+    if (mediaSemestral >= 6){
+        document.write("PARABÉNS! Você foi aprovado!");
+    } else if (mediaSemestral < 6){
+        document.write("Infelizmente, você foi reprovado!");
+    }
+    </script>
+</body>
+</html>

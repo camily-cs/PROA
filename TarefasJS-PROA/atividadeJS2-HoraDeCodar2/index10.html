@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2 - Ex10</title>
+</head>
+<body>
+    <script>
+        //OK
+        //10. Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
+
+
+       var contador = 0;
+       var media = 0;
+       var soma = 0;
+       var listaNotas = [];
+       
+       while(contador < 4){
+            var numero = parseInt(prompt("Numeros"));
+            listaNotas.push(numero);
+            if(numero > 0 && numero < 10){
+                soma = soma + numero;
+            }
+            contador++
+       }
+
+        if(numero < 0 && numero > 10){
+                document.write("Nota inválida");
+            }
+
+            
+        
+        document.write("As notas informadas foram "+listaNotas+"</br>");
+        /* document.write(soma+"</br>"); */
+
+        media = soma / 4;
+
+        if(media > 5){
+            document.write("A media é "+media+". Parabens, você passou no teste!");
+        } else{
+            document.write("A media é "+media+". Voce não passou no teste. Tente novamente!");
+        }
+        
+    </script>
+</body>
+</html>

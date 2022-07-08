@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays e seus metodos fantasticos: Ex1</title>
+</head>
+<body>
+    <script>
+        //OK
+       // 1. Faça um algoritmo para ler 20 números e armazenar em um array. Após a leitura total dos 20 números, o algoritmo deve escrever esse array.
+
+        var array = [];
+        var contador = 0;
+        var numeros = 0;
+
+        while(contador < 20){
+            numeros = parseInt(prompt("Digite um numero"));
+            array.push(numeros)
+            contador++
+        }
+        document.write("Os numeros digitados foram "+array);
+
+    </script>
+</body>
+</html>

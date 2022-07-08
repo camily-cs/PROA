@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Hora de codar 2 - Ex18</title>
+</head>
+<body>
+    <script>
+        //OK
+        /* 18 - Tendo como entrada a altura e o sexo codificado da seguinte forma: 1: feminino 2: masculino de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas:
+        Fórmula para cálculo:
+        para homem: peso * altura
+        
+        */
+       
+       var sexo= parseInt(prompt("Digite 1 caso seja do sexo feminino e digite 2 caso seja do sexo masculino"));
+       var peso = parseFloat(prompt("Digite seu peso"));
+       var altura = parseFloat(prompt("Digite sua altura EX: 1.65"));
+       var pesoIdeal = 0;
+
+       if(sexo === 1){
+            pesoIdeal = (peso * altura) - 44.7;
+            document.write("Seu peso ideal é "+pesoIdeal+" Kg.");
+       } else if (sexo === 2){
+           pesoIdeal = (peso * altura) - 58;
+           document.write("Seu peso ideal é "+pesoIdeal+" Kg.");
+       }
+
+    </script>
+</body>
+</html>

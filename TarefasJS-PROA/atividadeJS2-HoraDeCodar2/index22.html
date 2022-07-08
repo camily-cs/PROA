@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2 - Ex22</title>
+</head>
+<body>
+    <script>
+        //OK
+        /* 22. A Loja Remi du Fromage está com uma promoção onde cada capacete artesanal para tartaruga custa R$18.230 e pode ser pago em até 15 vezes sem juros. Crie um programa onde o usuário possa informar o valor parcelas que deseja pagar e exiba o valor de cada parcela. */
+
+        var valorCapacete = 18.230;
+        var qtdeParcelas = parseInt(prompt("Informe a qtde de parcelas"));
+        var valorParcelas = 0;
+        
+        if(qtdeParcelas > 15){
+        document.write("Quantidade de parcelas inválidas")
+        } else{
+            valorParcelas = valorCapacete / qtdeParcelas;
+            document.write("A quantida de parcelas é "+qtdeParcelas+". E o valor de cada parcela é de "+valorParcelas);
+        }
+   
+    </script>
+</body>
+</html>

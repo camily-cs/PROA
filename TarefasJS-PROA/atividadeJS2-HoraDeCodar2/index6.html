@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2 - Ex6</title>
+</head>
+<body>
+    <script>
+        //OK
+        //6. Faça um programa que leia 10 valores informados pelo usuário,                                               
+        //calcule, exiba os números informados e escreva a média aritmética desses valores lidos.
+        //formula media aritmetica: adição de um grupo de números e, em seguida, da divisão pela contagem desses números.
+
+        var contador = 0;
+        var numerosInfo = [];
+        var media = 0;
+        var soma = 0;
+        
+
+
+        while (contador < 10){
+            var recebe = parseInt(prompt("numero"));
+            numerosInfo.push(recebe);
+            soma += recebe;
+            contador++     
+        }
+
+        media = soma/10;
+
+        document.write(" Os números informados foram "+numerosInfo+ "</br> e a media aritmética é "+media);
+
+    </script>
+</body>
+</html>

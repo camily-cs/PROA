@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2 - Ex19</title>
+</head>
+<body>
+    <script>
+        //OK
+        /* 
+        19 - Escreva um programa para ler o número de gols marcados pelo Grêmio e o número de gols marcados pelo Inter em um GRENAL. Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.
+        */
+
+        var golsGremio = parseInt(prompt("Qtde de gols do Grêmio"));
+        var golsInter = parseInt(prompt("Qtde de gols do Inter"));
+
+        if(golsGremio > golsInter){
+            document.write("Grêmio é o vencedor!")
+        } else if(golsInter > golsGremio){
+            document.write("Inter é o vencedor!")
+        } else{
+            document.write("Jogo empatado!")
+        }
+
+    </script>
+</body>
+</html>

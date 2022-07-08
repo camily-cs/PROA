@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2 - Ex8</title>
+</head>
+<body>
+    <script>
+        //OK
+        //8. Faça um programa que leia 10 números informados pelo usuário e ao final da leitura escrever a soma total dos 10 números lidos.
+        var c = 0;
+        var numerosInfo = [];
+        var soma = 0;
+
+        while(c < 10){
+            var recebe = parseInt(prompt("Numero"));
+            numerosInfo.push(recebe);
+            soma += recebe;
+            c++
+        }
+        document.write(`Os numeros informados foram: `+numerosInfo+` e a soma desses numeros é: `+soma);
+    </script>
+</body>
+</html>

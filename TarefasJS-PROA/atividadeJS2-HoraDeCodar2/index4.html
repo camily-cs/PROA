@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2 - Ex4</title>
+</head>
+<body>
+    <script>
+        //OK
+        //4. Faça um programa que leia 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
+        var valor1 = parseInt(prompt("Digite um numero"));
+        var valor2 = parseInt(prompt("Digite um numero"));
+        var valor3 = parseInt(prompt("Digite um numero"));
+
+        if(valor1 < valor2 && valor1 < valor3){
+            document.write(valor2 + valor3);
+
+        }else if(valor2 < valor1 && valor2 < valor3){
+            document.write(valor1+valor3);
+
+        }else if(valor3 < valor1 && valor3 < valor2){
+            document.write(valor1 + valor2);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2 - Ex21</title>
+</head>
+<body>
+    <script>
+        //OK
+        /* 
+        21 - Escreva um programa que leia as notas das duas avaliações normais e a nota da avaliação optativa. Calcular a média do semestre considerando que a prova optativa substitui a nota mais baixa entre as duas primeiras avaliações. Escrever a média e mensagens que indiquem se o aluno foi aprovado, reprovado ou está em exame, de acordo com as informações abaixo:
+        */
+
+        var avaliacao1 = parseInt(prompt("Nota avaliacao 1"));
+        var avaliacao2 = parseInt(prompt("Nota avaliacao 2"));
+        var avaliacaoOptativa = parseInt(prompt("Nota avaliacao optativa"));
+        var media = 0;
+        
+
+
+        if(avaliacao1 > avaliacao2 && avaliacaoOptativa > avaliacao2){
+            media=(avaliacaoOptativa+avaliacao1)/2 
+            /* document.write("A media é "+media); */
+        } else if(avaliacao2 > avaliacao1 && avaliacaoOptativa > avaliacao1){
+            media=(avaliacaoOptativa+avaliacao2)/2 
+            /* document.write("A media é "+media); */
+        } else if(avaliacao1 > avaliacaoOptativa && avaliacao2 > avaliacaoOptativa){
+            media=(avaliacao1+avaliacao2)/2 
+        }
+        
+        
+        
+        if(media >= 6){
+            document.write("Sua media é "+media+". Voce foi aprovado!");
+        } else if(media < 3){
+            document.write("Sua media é "+media+". Voce foi reprovado!");
+        } else if(media >=3 && media < 6){
+            document.write("Sua media é "+media+". Em exame!");
+        } 
+
+
+    </script>
+</body>
+</html>

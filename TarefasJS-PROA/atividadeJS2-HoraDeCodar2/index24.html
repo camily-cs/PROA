@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2 - Ex24</title>
+</head>
+<body>
+    <script>
+        //OK
+        /* 
+        24 - Um zoológico muito louco
+        Escreva um programa que leia a idade de 2 javalis e 2 girafas (considere que a idade dos javalis será sempre diferente, assim como das girafas ). Calcule e escreva a soma das idades do javali mais velho com a girafa mais nova, e o produto das idades do javali mais novo com a girafa mais velha.
+        */
+
+        var contador = 0;
+        var contador2 = 0;
+        var idadeJavali1 = parseInt(prompt("Digite a idade do primeiro javali"));
+        var idadeJavali2 = parseInt(prompt("Digite a idade do segundo javali"));
+        var idadeGirafa1 = parseInt(prompt("Digite a idade da primeira girafa"));
+        var idadeGirafa2 = parseInt(prompt("Digite a idade da segunda girafa"));
+        var soma = 0;
+
+        /* Soma da idade do javali mais velho e a girafa mais nova */
+        if(idadeJavali1 > idadeJavali2 && idadeGirafa1 > idadeGirafa2){
+            soma = idadeJavali1 + idadeGirafa2;
+            document.write("A soma da idade do javali mais velho e a girafa mais nova: "+soma+"</br>");
+
+        } else if(idadeJavali2 > idadeJavali1 && idadeGirafa2 > idadeGirafa1){
+            soma = idadeJavali2 + idadeGirafa1;
+            document.write("A soma da idade do javali mais velho e a girafa mais nova: "+soma+"</br>");
+
+        } else if(idadeJavali1 > idadeJavali2 && idadeGirafa2 > idadeGirafa1){
+            soma = idadeJavali1 + idadeGirafa1;
+            document.write("A soma da idade do javali mais velho e a girafa mais nova: "+soma+"</br>");
+
+        } else if(idadeJavali2 > idadeJavali1 && idadeGirafa1 > idadeGirafa2){
+            soma = idadeJavali2 + idadeGirafa2;
+            document.write("A soma da idade do javali mais velho e a girafa mais nova: "+soma+"</br>");
+        }
+
+
+
+        /* Produto da idade do javali mais novo e a girafa mais velha */
+        if(idadeJavali1 > idadeJavali2 && idadeGirafa1 > idadeGirafa2){
+            soma = idadeJavali2 * idadeGirafa1;
+            document.write("O produto da idade do javali mais novo e a girafa mais velha: "+soma);
+
+        } else if(idadeJavali2 > idadeJavali1 && idadeGirafa2 > idadeGirafa1){
+            soma = idadeJavali1 * idadeGirafa2;
+            document.write("O produto da idade do javali mais novo e a girafa mais velha: "+soma);
+
+        } else if(idadeJavali1 > idadeJavali2 && idadeGirafa2 > idadeGirafa1){
+            soma = idadeJavali2 * idadeGirafa2;
+            document.write("O produto da idade do javali mais novo e a girafa mais velha: "+soma);
+
+        } else if(idadeJavali2 > idadeJavali1 && idadeGirafa1 > idadeGirafa2){
+            soma = idadeJavali1 * idadeGirafa1;
+            document.write("O produto da idade do javali mais novo e a girafa mais velha: "+soma);
+        }
+        
+        </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2 - Ex12</title>
+</head>
+<body>
+    <script>
+        //OK
+        /* 12 - A equipe Mercedes deseja calcular o número mínimo de litros que deverá colocar no tanque de seu carro para que ele possa percorrer um determinado número de voltas até o primeiro reabastecimento.
+        Escreva um programa que leia o comprimento da pista (em metros), o número total de voltas a serem percorridas no grande prêmio, o número de reabastecimentos desejados e o consumo de combustível do carro (em Km/L). 
+
+        O programa deve calcular e exibir o número mínimo de litros necessários para percorrer até o primeiro reabastecimento. 
+        Observação: considere que a quantidade de voltas entre os reabastecimentos é o mesmo, mas não poderá ser maior ou igual a 2. 
+
+        O usuário deve informar a quantidade de quilômetros total do circuito e a quantidade de litros que o carro pode possuir.  */
+
+
+        var tamPista = parseInt(prompt("Informe o tamanho da pista"));
+        var qtdeVoltas = parseInt(prompt("Informe a quantidade de voltas"));
+        var qtdeReabastecimento = parseInt(prompt("Reabastecimento"));
+        var consumoCarro = parseInt(prompt("Informe o consumo do carro (Km / L)"));
+
+        var voltasParada1 = qtdeVoltas / qtdeReabastecimento;
+
+        var distanciaParada1 = (voltasParada1 * tamPista) / 100;
+
+        var consumoParada1 = consumoCarro * distanciaParada1;
+
+        document.write("A distância percorrida até a primeira parada é: "+distanciaParada1);
+        document.write("O numero de voltas até a primeira parada é "+ voltasParada1);
+        document.write("O carro vai gastar"+consumoParada1+ " até a primeira parada");
+        
+    </script>
+</body>
+</html>

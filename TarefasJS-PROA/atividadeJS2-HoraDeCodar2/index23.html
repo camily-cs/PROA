@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 2 - Ex23</title>
+</head>
+<body>
+    <script>
+        //OK
+        /* 23 - Faça um programa em que o usuário informe 20 valores e no final, escreva o maior e o menor valor lido. */
+
+        var contador = 0;
+        var numeros = 0;
+        var array = [];
+
+        while(contador < 20){
+            numeros = parseInt(prompt("Numeros"));
+            array.push(numeros);
+            contador++
+        }
+
+        document.write("Numeros digitados"+array+"</br>");
+
+        //ordenando vetor do menor objeto para o maior objeto
+        array.sort()
+        document.write("Ordem crescente"+array+"</br>")
+
+        document.write("Menor numero"+array[0]+"</br>");
+        document.write("Maior numero"+array[19])
+    </script>
+</body>
+</html>
