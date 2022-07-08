@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comando splice</title>
+</head>
+<body>
+    <script>
+        
+        //O splice serve para remover ou adicionar objeto ao array
+        //EX: nomeArray.splice(nObj, qtde de objetos a partir do nObj que quero excluir)
+
+
+
+        /* Abaixo, a partir do obj "Luiz", estamos excluindo 2 objetos, são eles "Luiz" e "Gustavo"
+                    *A contagem para exclusao inicia no 1.
+                    *O primeiro objeto excluido é "Luiz", o segundo é "Gustavo"
+                    *O obj "Fernanda permanece no array normalmente"
+        */
+        array1 = ["Camily", "Marilene", "Luiz", "Gustavo", "Fernanda"]
+        array1.splice(2, 2);
+        console.log(array1);
+        // array = ["Camily", "Marilene", "Fernanda"]
+
+
+
+
+        //Adicionando os obj "Jiló", "Carne" e "Tomate"
+                        //No obj 2, 3 e 4 serao adicionados os novos obj
+                        //*O obj 2 será "Jilo" e em seguida virão "Carne" e "Tomate"
+                        //*"Batata", Macarrao" e "Cenoura" serao os ultimos obj, sendo eles os obj 5, 6 e 7
+        array2 = ["arroz", "feijao", "batata", "macarrao", "cenoura"];
+        array2.splice(2, 0, "Jiló", "Carne", "Tomate");
+        console.log(array2);
+    </script>
+</body>
+</html>
