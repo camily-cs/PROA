@@ -1,0 +1,77 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    top: 50px;
+    bottom: 50px;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+aside {
+    margin-left: 1200px;
+    margin-top: 200px;
+}
+
+img{
+    padding: 10px;
+}
+
+#receita{
+    margin-top: 100px;
+}
+
+#img1 {
+    margin-left: 580px;
+}
+
+#menu{
+    margin-left: 3px;
+}
+
+#projeto1{
+    text-align: center;
+}
+
+.btnMenu {
+    background-color: #0616c6;
+    border: none;
+    color: aliceblue;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.btnMenu:hover {
+    background-color: #0616c6;
+    border: none;
+    color: black;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+
+.imgRecHome {
+    width: 300px;
+    height: 200px;
+    border-radius: 3px;  
+   }
+
+
+
+.imgRec {
+margin-left: 35%;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.conteudoReceitas{
+    margin-left: 50px;
+}
