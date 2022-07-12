@@ -1,0 +1,30 @@
+.containerStatus{
+    width: 500px;
+    margin-left: 330px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.divStatus{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding-left: 20px;
+}
+
+.userStatus{
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px; 
+    border: 3px solid;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d) ;  
+}
+
+p{
+    margin-top: -7px;
+    margin-left: 10px;
+    color: black;
+}
